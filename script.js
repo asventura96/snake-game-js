@@ -37,6 +37,9 @@ function update(event){
     if(event.keyCode == 38 && direction != 'down') direction = 'up';
     if(event.keyCode == 39 && direction != 'left') direction = 'right';
     if(event.keyCode == 40 && direction != 'up') direction = 'down';
+
+    // Força o movimento imediato após mudar a direção
+    iniciarJogo();
 }
 
 function iniciarJogo(){    
@@ -80,4 +83,4 @@ function iniciarJogo(){
     snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
 }
 
-let jogo = setInterval(iniciarJogo, 200);
+let jogo = setInterval(iniciarJogo, 400);
