@@ -80,4 +80,4 @@ function iniciarJogo(){
     snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
 }
 
-let jogo = setInterval(iniciarJogo, 400);
+let jogo = setInterval(iniciarJogo, 200);
